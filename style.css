@@ -154,15 +154,17 @@ img {
   clip-path: polygon(50% 0%, 100% 0, 100% 88%, 0 99%, 0 0);
 }
 
-.home .slide:nth-child(1) {
+.slide-1 {
   background: url(./images/home-1.png);
   background-repeat: no-repeat;
 }
-.home .slide:nth-child(2) {
+
+.slide-2 {
   background: url(./images/home-2.png);
   background-repeat: no-repeat;
 }
-.home .slide:nth-child(3) {
+
+.slide-3 {
   background: url(./images/home-3.png);
   background-repeat: no-repeat;
 }
@@ -210,6 +212,16 @@ img {
     padding: 2rem 0;
 }
 
+.swiper-pagination-bullet {
+  height: 1rem !important;
+  width: 1rem !important;
+  background: var(--white-color) !important;
+  transform: translateY(-7rem) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-color) !important;
+}
 
 
 
@@ -265,5 +277,13 @@ img {
 
   .nav-toggle:hover i {
     color: var(--main-color);
+  }
+
+  .home .slide {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 0);
+  }
+
+  .home .content {
+    padding-left: 0;
   }
 }

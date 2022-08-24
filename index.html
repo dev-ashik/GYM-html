@@ -11,6 +11,12 @@
 
     <!-- using Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <!-- header section starts -->
@@ -41,9 +47,9 @@
 
     <!-- home section start -->
         <section class="home" id="home">
-            <div class="home-slider">
-                <div>
-                    <div class="slide">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide slide-1">
                         <div class="content">
                             <h1 class="section-title">gymfit</h1>
                             <h3 class="section-header">for athletic women</h3>
@@ -51,7 +57,7 @@
                             <a href="#" class="btn">join now!</a>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiper-slide slide slide-2">
                         <div class="content">
                             <h1 class="section-title">gymfit</h1>
                             <h3 class="section-header">for athletic women</h3>
@@ -59,7 +65,7 @@
                             <a href="#" class="btn">join now!</a>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiper-slide slide slide-3">
                         <div class="content">
                             <h1 class="section-title">gymfit</h1>
                             <h3 class="section-header">for athletic women</h3>
@@ -68,6 +74,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     <!-- home section end -->
@@ -75,7 +82,10 @@
 
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- custom js file -->
     <script src="./app.js"></script>
+
 </body>
 </html>
