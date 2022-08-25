@@ -484,9 +484,42 @@ img {
   margin-top: -1.5rem;
 }
 
+/* video section */
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(./images/video.png) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+.video-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.video-content i {
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+  background: var(--main-color);
+  padding: 1rem;
+  border-radius: 50%;
+}
 
+.video-content h1 {
+  font-size: var(--h1-font-size);
+  padding: 1rem 0;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
 
 
 
