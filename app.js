@@ -67,3 +67,15 @@ var swiper = new Swiper(".time-imgs", {
     }
   }
 });
+
+
+// change header Background when scroll
+const header = document.querySelector(".header");
+
+window.addEventListener('scroll' , ()=> {
+  if(window.scrollY >= 70){
+    header.classList.add('header-shadow');
+  }else {
+    header.classList.remove('header-shadow');
+  }
+})

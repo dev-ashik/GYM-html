@@ -82,6 +82,10 @@ img {
   z-index: 100;
 }
 
+.header-shadow {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .header-container {
   max-width: 1300px;
   height: 100%;
@@ -656,6 +660,135 @@ img {
 }
 
 
+/* footer */
+.footer {
+  width: 100%;
+  background: url(./images/footer.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.footer .footer-contaier {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.footer .footer-contaier .logo {
+  padding-top: var(--header-height);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-contaier .logo span {
+  font-weight: 700;
+}
+
+.footer .footer-contaier .logo i {
+  display: none;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.footer ul::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--main-color);
+}
+
+.footer ul::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--main-color);
+}
+
+.footer ul li {
+  margin-left: 1rem;
+}
+
+.footer ul li a {
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.footer .search-form {
+  width: 25rem;
+  height: 3rem;
+  display: flex;
+  border: 2px solid var(--white-color);
+  text-align: center;
+}
+
+.footer .search-form input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  padding: 1rem;
+}
+
+.footer .search-form label {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+  color: var(--main-color);
+}
+
+.footer .search-form label img {
+  width: 25px;
+  height: 1.5rem;
+}
+
+.footer h1 {
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.footer P {
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  border-top: 1px solid var(--white-color);
+  width: 100%;
+  padding-top: .5rem;
+}
+
+.footer P span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+
+
+
 
 /* media queries */
 
@@ -730,5 +863,9 @@ img {
 
   .trainer-box .trainer-img {
     margin-left: 0;
+  }
+
+  .footer .search-form {
+    width: 90%;
   }
 }
