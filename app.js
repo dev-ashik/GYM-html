@@ -26,7 +26,7 @@ navLink.forEach((l) => l.addEventListener("click", colorLink));
 
 // -- Swiper --
 var swiper = new Swiper(".home-slider", {
-    loop: true,
+  loop: true,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
