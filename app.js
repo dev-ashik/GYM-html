@@ -24,7 +24,7 @@ function colorLink() {
 }
 navLink.forEach((l) => l.addEventListener("click", colorLink));
 
-// -- Swiper --
+// -- home-slider Swiper --
 var swiper = new Swiper(".home-slider", {
   loop: true,
   spaceBetween: 30,
@@ -41,4 +41,29 @@ var swiper = new Swiper(".home-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+// -- time-imgs Swiper --
+var swiper = new Swiper(".time-imgs", {
+  loop: true,
+  spaceBetween: 0,
+  grapCursor: true,
+  autoplay: {
+    delay: 2500,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    }
+  }
 });
