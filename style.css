@@ -165,7 +165,7 @@ img {
 }
 
 .slide-2 {
-  background: url(./images/home-2.png);
+  background: url(./images/home-2.jpg);
   background-repeat: no-repeat;
 }
 
@@ -497,7 +497,7 @@ img {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: url(./images/video.png) no-repeat;
+  background: url(./images/video.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -786,8 +786,27 @@ img {
   text-transform: uppercase;
 }
 
+/* scroll to up */
+.up {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  bottom: 1.5rem;
+  right: -5rem;
+  z-index: 1000;
+  background: var(--main-color);
+  /* border-radius: 50%; */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(0 66%, 50% 0, 100% 66%, 66% 55%, 66% 100%, 33% 100%, 33% 55%);
+}
 
+.up.show {
+  right: 0.5rem;
+}
 
 
 /* media queries */
@@ -842,7 +861,7 @@ img {
   }
 
   .home .slide {
-    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 99%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 
   .home .content {

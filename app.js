@@ -79,3 +79,18 @@ window.addEventListener('scroll' , ()=> {
     header.classList.remove('header-shadow');
   }
 })
+
+// scroll to up 
+
+const upBtn = document.querySelector('.up');
+window.onscroll = () => {
+  upBtn.classList.toggle('show', window.scrollY > 560);
+}
+
+
+upBtn.onclick = () => {
+  window.scrollTo({
+    behavior: 'smooth',
+    top: '0'
+  })
+}
